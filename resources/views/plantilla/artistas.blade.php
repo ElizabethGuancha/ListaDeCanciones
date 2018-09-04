@@ -14,12 +14,12 @@
             <td colspan=2><center><b> @yield('title_tabla') </b</center></td>
         </tr>
 
-        @foreach($artistas as $cancion){
+        @for(i=0; i < count($artistas);i++)
         <tr>
-            <td><b>{{$cancion}} </b></td>
-            <td> ##### </td>
+            <td><b>Artistas{{i}}</b></td>
+            <td> {{$artistas}} </td>
         </tr>
-        @endforeach
+        @endfor
     }
 
         <tr>
